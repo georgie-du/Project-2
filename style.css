@@ -31,7 +31,6 @@ body {
   margin: 0 auto;
   width: 80%;
 }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -89,7 +88,6 @@ body {
 /*--------------------------------------------------------------
 # Navbar 
 --------------------------------------------------------------*/
-
 .nav-wrapper {
   background: var(--dark-blue);
   font-family: "Lato", sans-serif;
@@ -296,7 +294,6 @@ body {
 #skills {
   padding: 10px;
   text-align: center;
-  /* margin: 50px auto; */
 }
 
 .web-icons {
@@ -330,18 +327,18 @@ body {
 --------------------------------------------------------------*/
 form {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   margin: 0;
   background: var(--dark-blue);
 }
 
 .contact-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  height: 80%;
-  width: 100%;
+  justify-content: space-between;
+  height: 50%;
+  width: 80%;
   padding: 6px 7%;
   margin: 0 auto;
   border: 0;
@@ -351,6 +348,21 @@ label {
   display: none;
 }
 
+.form-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-msg {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 input,
 textarea {
   border-radius: 8px;
@@ -358,15 +370,15 @@ textarea {
   background: #ebeff3;
   color: var(--light-blue);
   font-size: 16px;
-  width: 50%;
+  width: 90%;
   height: 40px;
   margin: 0 0 16px;
   padding: 23px 2%;
 }
 
 textarea {
-  height: 160px;
-  resize: vertical;
+  height: 170px;
+  resize: none;
 }
 
 form button {
@@ -379,12 +391,13 @@ form button {
   display: block;
   font-size: 16px;
   font-weight: 400;
-  padding: 0;
   line-height: 45px;
   text-align: center;
   transition: 0.4s;
   text-transform: uppercase;
-  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 15%;
 }
 
 form button:hover {
@@ -398,6 +411,7 @@ form h1 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
 /*--------------------------------------------------------------
 # Footer 
 --------------------------------------------------------------*/
@@ -413,7 +427,6 @@ footer {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  /* flex-flow: row wrap; */
 }
 
 .social-media {
@@ -462,7 +475,7 @@ footer:after {
 }
 
 .page2 {
-   margin: 0;
+  margin: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -496,16 +509,24 @@ footer:after {
     flex-direction: column;
     align-items: center;
   }
+
+  .contact-form {
+    flex-direction: column;
+  }
+
+  .form-info,
+  .form-msg {
+    width: 80%;
+  }
+
+  .btn-hi {
+    width: 48%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header-main {
     height: 50vh;
-  }
-
-  input,
-  textarea {
-    width: 65%;
   }
 }
 
@@ -552,14 +573,8 @@ footer:after {
     font-size: 12px;
   }
 
-  .contact-form {
-    padding: 0;
-  }
-
-  .contact {
-    display: flex;
-    flex-flow: column;
-    align-items: center;  
+  .btn-hi {
+    margin-top: 90px;
   }
 }
 
