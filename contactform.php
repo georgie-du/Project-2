@@ -3,9 +3,9 @@
   $name = $_POST['name'];
   $mailFrom = $_POST['email'];
   $subject = $_POST['subject'];
-  $message = $_POST['message'];
+  $message = $_POST['textarea'];
 
-$mailTo = "georgiana.a.dumitru@gmail.com";
+$mailTo = "contact@georgidev.me";
 $headers = "From: ".$mailFrom;
 $txt = "You have recceived an email from ".$name.".\n\n".$message;
 
