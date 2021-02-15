@@ -1,1 +1,1 @@
- https://georgie-du.github.io/Project-2/
+https://georgidev.me/
