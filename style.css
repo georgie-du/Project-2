@@ -294,21 +294,21 @@ body {
 # Skills
 --------------------------------------------------------------*/
 #skills {
-  padding: 50px;
+  padding: 10px;
   text-align: center;
-  margin: 50px auto;
+  /* margin: 50px auto; */
 }
 
 .web-icons {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 .web-icons i {
   margin: 30px;
-  font-size: 65px;
+  font-size: 70px;
   padding: 0 30px;
 }
 
@@ -341,12 +341,9 @@ form {
   align-items: center;
   justify-content: center;
   height: 80%;
-}
-
-fieldset {
   width: 100%;
-  padding: 6px 9%;
-  margin: 0;
+  padding: 6px 7%;
+  margin: 0 auto;
   border: 0;
 }
 
@@ -364,11 +361,11 @@ textarea {
   width: 50%;
   height: 40px;
   margin: 0 0 16px;
-  padding: 16px 3%;
+  padding: 23px 2%;
 }
 
 textarea {
-  height: 130px;
+  height: 160px;
   resize: vertical;
 }
 
@@ -401,10 +398,6 @@ form h1 {
   font-weight: 400;
   text-transform: uppercase;
 }
-
-
-
-
 /*--------------------------------------------------------------
 # Footer 
 --------------------------------------------------------------*/
@@ -420,12 +413,13 @@ footer {
   display: flex;
   justify-content: space-between;
   color: #fff;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
 }
 
 .social-media {
   flex: 1;
   text-align: end;
+  padding-top: 10px;
 }
 
 .social-media i {
@@ -468,12 +462,7 @@ footer:after {
 }
 
 .page2 {
-  margin: 0;
-  height: 15vh;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+   margin: 0;
 }
 
 @media screen and (max-width: 1100px) {
@@ -512,6 +501,11 @@ footer:after {
 @media screen and (max-width: 768px) {
   .header-main {
     height: 50vh;
+  }
+
+  input,
+  textarea {
+    width: 65%;
   }
 }
 
@@ -556,6 +550,16 @@ footer:after {
   .container {
     width: 90%;
     font-size: 12px;
+  }
+
+  .contact-form {
+    padding: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-flow: column;
+    align-items: center;  
   }
 }
 
